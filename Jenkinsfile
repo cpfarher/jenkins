@@ -1,6 +1,6 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker 'python:3.12.1-alpine3.19' }
+    
     //agent any
     stages {
         stage('checkout') {
@@ -15,6 +15,7 @@ pipeline {
             }
         }
         stage('python') {
+            agent { docker 'python:3.12.1-alpine3.19' }
             steps {
                 sh "python3 --version"
             }
