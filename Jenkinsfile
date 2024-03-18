@@ -8,8 +8,6 @@ pipeline {
                 git branch:'main', url: 'https://github.com/cpfarher/jenkins'
             }
         }
-    }
-    stages {
         stage('build') {
             steps {
                 sh 'python --version'
