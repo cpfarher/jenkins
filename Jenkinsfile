@@ -14,5 +14,10 @@ pipeline {
                 sh 'ls'
             }
         }
+        stage('python') {
+            steps {
+                sh "python3 --version"
+            }
+        }
     }
 }
