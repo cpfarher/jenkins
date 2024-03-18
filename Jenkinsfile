@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git branch:'main', url: 'https://github.com/cpfarher/jenkins'
+                //git branch:'main', url: 'https://github.com/cpfarher/jenkins'
+                echo 'we do not need anymore the checkout'
             }
         }
         stage('build') {
